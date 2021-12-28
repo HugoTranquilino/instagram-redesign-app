@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@300&display=swap');
+
+$_gray: #EAEBF3;
+$_dark-gray: #A5A5A5;
+$_black: #000000;
+$_text-sm: 10px;
+$_text-md: 12px;
+$_text-lg: 14px;
+
+$_boxshadow: 9px 9px 16px #a3b1c699, -9px -9px 16px #ffffff80;
+
+body {
+    background-color: $_gray;
+    font-family: 'Source Sans 3', sans-serif;
+}
+
+.text {
+    text-align: center;
+    margin: 0;
+}
+
+.text-sm {
+    @extend .text;
+    font-size: $_text-sm;
+}
+
+.text-md {
+    @extend .text;
+    font-size: $_text-md;
+}
+
+.text-lg {
+    @extend .text;
+    font-size: $_text-lg;
+}
+
+.relative {
+    position: relative;
+}
+
+.center {
+    display: grid;
+    place-items: center;
+}
+
+.icon-sm {
+    width: 16px;
+    cursor: pointer;
+}
+
+.icon-md {
+    width: 24px;
+}
+
+.header-container {
+    display: grid;
+    grid-template-columns: 16px 50px 150px 50px 16px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.notification {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    background: red;
+    border-radius: 50%;
+    top: 2px;
+    right: 2px;
+}
+
+.profile-pic-neumorphism {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 16px 0;
+    box-shadow: $_boxshadow;
+}
+
+.icon-neumorphism {
+    align-self: end;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    justify-self: center;
+    box-shadow: $_boxshadow;
+    cursor: pointer;
+}
+
+.story {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: linear-gradient(to right, red, purple);
+}
+
+.profile-picture {
+    width: 72px;
+    height: 72px;
+    border-radius: 50%;
+    border: 3px solid $_gray;
+    background: $_gray;
+}
+
+main{
+    display: grid;
+    place-items: center;
+}
+
+.posts-container{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 282px;
+    height: 45px;
+    border-radius: 8px;
+    box-shadow: $_boxshadow;
+    margin-top: 16px;
+}
+
+.text-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+}
+
+.text-box span + span{
+    color: $_dark-gray;
+}
+
+.highlights-container{
+    list-style-type: none;
+    display: flex;
+    padding: 0;
+}
+
+.highlights-container div{
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    box-shadow: $_boxshadow;
+    margin: 8px;
+}
+
+.photos-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 4px;
+    width: 282px;
+}
+
+.photos-container img{
+    border-radius: 8px;
+    width: 90px;
+    height: 90px;
+    object-fit: cover;
+}
