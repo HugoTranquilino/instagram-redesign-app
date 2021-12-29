@@ -1,5 +1,5 @@
 const BASE_API = 'https://graph.instagram.com/me';
-const ACCESS_TOKEN = 'IGQVJVcF9nbHludy1FX3ZAMVk9qYlFLVkNyNFZAmQWdjbGwxeVJGSmZAkd1k0eXk4V255RzFPWXEwV0c3UlF1bjdSU0JRcklPMzFfTVhFX3NFU0V0ZAml6d0gzMWhXUzY2OFJTWUowQ29kY3FJRDU5ZAGgzX3FuZAkZANV29Hbzk4';
+const ACCESS_TOKEN = 'IGQVJXejBtbF9xb2hHYXJVSm9rcWxzTzd4QjZAOUllhZAXdNcUw5V3R6SS1SNGNzdU5nSEF2NW16WC1WSDZA0ZA0RZAZAWJUX2NoNWpEYUlmRDJza29lak84Mkl1S05zel8zTndiUnM0SExvYm5OSW91dWh1a2szdGVwZAHVidUZAV';
 
 const username = document.getElementById('username')
 const posts = document.getElementById('posts')
